@@ -6,13 +6,13 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 21:30:00 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/03/19 21:34:34 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/03/20 12:54:48 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_hex(unsigned int n, char format)
+int	ft_print_hex(unsigned long long n, char format)
 {
 	int	len;
 
