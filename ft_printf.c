@@ -6,7 +6,7 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 21:30:00 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/03/20 13:10:05 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/03/20 13:19:46 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,11 @@ int	ft_printf(const char *str, ...)
 	while (*str)
 	{
 		if (*str == '%')
-			print_length += ft_format(args, *(str + 1));
+			print_length += ft_format(args, *++str);
 		else
 			print_length += ft_print_char(*str);
-		str++;
+		if (*str)
+			str++;
 	}
 	va_end(args);
 	return (print_length);

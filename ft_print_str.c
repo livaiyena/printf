@@ -6,7 +6,7 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 21:30:00 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/03/19 21:45:09 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/03/20 13:17:22 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_print_str(char *s)
 		return (6);
 	}
 	tmp = s;
-	while (*s++)
-		write(1, s, 1);
+	while (*s)
+		write(1, s++, 1);
 	return (s - tmp);
 }
